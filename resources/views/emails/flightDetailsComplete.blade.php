@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Details</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5ff; margin: 0; padding: 0;">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f5ff; width: 100%; height: 100%; margin: 0; padding: 0; border-collapse: collapse;">
+        <tr>
+            <td align="center" valign="middle">
+                <div style="background-color: #fff; padding: 30px; max-width: 400px; text-align: center; border-radius: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);">
+                    <img src="https://rallylly.vercel.app/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Flogodark.3e68d264.jpg&w=1080&q=75" alt="Logo" style="height:80px">
+                    <h1 style="font-size: 1.2rem; color: #243475; margin-bottom: 10px;">Dear {{$flightDetail->firstName}},</h1>
+                    <p style="font-size: 1rem; color: #243475; margin: 10px 0;">Thank you for your interest in participating in our International Air Gathering in Tunisia! We are
+                    excited to welcome you to this exceptional event.</p>
+                    <p style="font-size: 1rem; color: #243475; margin: 10px 0;">To finalize your registration and secure your participation, please fill out the form by following this
+                    lin :<a href="https://aerorallyes.com/register?id={{$flightDetail->id}}">Register form</a></p>
+                    <p style="font-size: 1rem; color: #243475; margin: 10px 0;">We appreciate your commitment and look forward to welcoming you to this unique event.</p>
+                    <p style="font-size: 1rem; color: #243475; margin: 10px 0;">If you have any questions or need further information, please do not hesitate to contact us at act@aerorallyes.com.</p>
+                    <p style="font-size: 1rem; color: #243475; margin: 10px 0;">Best regards.</p>
+                    <p style="font-size: 0.8rem; color: #aaa; margin-top: 20px;">© 2024 aerorallyes. All rights reserved.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
