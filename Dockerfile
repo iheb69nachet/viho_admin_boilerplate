@@ -24,6 +24,7 @@ RUN mkdir -p bootstrap/cache \
     && mkdir -p storage/framework/{cache,sessions,views} \
     && mkdir -p storage/logs \
     && chmod -R 775 storage bootstrap/cache
+RUN chmod -R 775 storage bootstrap/cache
 
 # Install PHP and JS dependencies
 RUN composer install --no-interaction --prefer-dist --optimize-autoloader 
