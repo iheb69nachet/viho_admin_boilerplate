@@ -20,6 +20,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 
 # Copy existing application files
 COPY . .
+RUN mkdir -p bootstrap/cache \
+    && mkdir -p storage/framework/{cache,sessions,views} \
+    && mkdir -p storage/logs \
+    && chmod -R 775 storage bootstrap/cache
 
 # Install PHP and JS dependencies
 RUN composer install --no-interaction --prefer-dist --optimize-autoloader 
